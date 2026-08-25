@@ -60,8 +60,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: "4.0"
-          memory: 6G
+          cpus: "2.0"
+          memory: 4G
 
     # Irrigidimenti minimi: l'app non ha bisogno di privilegi.
     security_opt:
