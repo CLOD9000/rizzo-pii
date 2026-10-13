@@ -19,7 +19,8 @@ services:
     image: rizzo-pii:local
     container_name: rizzo-pii
     restart: unless-stopped
-
+    labels:
+      - "docker-volume-backup.stop-during-backup=true"
     ports:
       # Solo localhost: l'app processa documenti con dati personali,
       # il confine di rete lo mette docker. Togli "127.0.0.1:" solo
